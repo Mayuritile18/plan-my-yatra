@@ -1,40 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Home</title>
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet"href="CSS/home.css">
+    <title>Plan My Yatra</title>
+    <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="./CSS/navbar.css">
+    <link rel="stylesheet" href="./CSS/home.css">
 </head>
 <body>
 
-    <div class="main-hero-section">
+<div class="main-hero-section">
 
+    <!-- Navbar -->
     <div class="main-container">
+
         <div class="img-container">
-            <img src="./images/main-logo.png" alt="logo" class="main-logo-img"/>
-            <h1 class="website-name">plan my <span style="color: #FFA02E;">yatra</span></h1>
-        <br>
+            <img src="./images/main-logo.png" alt="logo" class="main-logo-img">
+            <h1 class="website-name">Plan My <span>Yatra</span></h1>
         </div>
+
         <div class="nav-menu">
-            <a href="./index.html" class="menu">Home</a>
+            <a href="index.html" class="menu">Home</a>
             <a href="./pages/destination.html" class="menu">Destination</a>
-            <a href="" class="menu">Plan Trip</a>
-            <a href="" class="menu">About</a>
-            <a href="" class="menu">Contact</a>
+            <a href="#" class="menu">Plan Trip</a>
+            <a href="#" class="menu">About</a>
+            <a href="#" class="menu">Contact</a>
         </div>
 
         <div class="login-menu">
-            <a href="" class="menu">Login</a>
-            <a href="" class="menu">Sign Up</a>
+            <a href="#" class="menu">Login</a>
+            <a href="#" class="menu">Sign Up</a>
+        </div>
+
+    </div>
+
+    <!-- Hero Content -->
+    <div class="hero-content">
+
+        <h1>Explore India</h1>
+
+        <p>
+            Discover beautiful destinations and plan your perfect journey with Plan My Yatra.
+        </p>
+
+        <div class="destination-container">
+
+            <div class="destination-container-items">
+                <img src="./images/location.png" height="20">
+                <input class="destination-input" type="text" placeholder="Search destination">
+            </div>
+
+            <div class="destination-container-items">
+                <img src="./images/date.png" height="20">
+                <input class="destination-input" type="date">
+            </div>
+
+            <div class="destination-container-items">
+                <img src="./images/people.png" height="20">
+                <input class="destination-input" type="number" placeholder="Travelers">
+            </div>
+
+           <div class="search-box">
+               <img src="./images/search.png" class="search-icon">
+           <button class="btn-search">Search</button>
+           </div>
+
+        </div>
+
+        <div class="recommendations">
+            <div class="recommendations-items">
+                <span class="recommendations-count">500+</span>
+                <span>Destination</span>
+            </div>
+
+            <div class="recommendations-items">
+                <span class="recommendations-count">50K+</span>
+                <span>Happy Travelers</span>
+            </div>
+
+            <div class="recommendations-items">
+                <span class="recommendations-count">10+</span>
+                <span>Experiences</span>
+            </div>
+
+            <div class="recommendations-items">
+                <span class="recommendations-count">
+                    4.9 <img src="./images/star.webp" height="20px" alt="star"/>
+                </span>
+                <span>Aeverage Rating</span>
+            </div>
         </div>
     </div>
 
-    <div>
-    
-            <h1>Explore India</h1>
-            <p>Discover beautiful destinations and plan your perfect journey with Plan My Yatra.</p>
-        </div>
-    </div>
+</div>
+
 </body>
 </html>
