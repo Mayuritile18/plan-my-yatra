@@ -1,96 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
-    margin:0;
-    overflow-x:hidden;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
 }
 
+/* HERO SECTION */
 .main-hero-section{
-    height:100vh;
-    width:100%;
-    background-image:
-    linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),
+    width: 100%;
+    min-height: 100vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
     url("../images/bg-img.png");
-
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
+/* NAVBAR */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+}
+
+.logo-section{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+}
+
+.logo-section h1{
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.logo-section span{
+    color: #FFA02E;
+}
+
+/* NAV LINKS */
+.nav-links,
+.login-links{
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a,
+.login-links a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-links a:hover,
+.login-links a:hover{
+    color: #FFA02E;
+}
+
+/* HERO CONTENT */
 .hero-content{
-    padding-top:220px;
-    padding-left:60px;
-    color:white;
+    padding: 100px 60px;
+    color: white;
 }
 
 .hero-content h1{
-    font-size:70px;
+    font-size: 75px;
+    margin-bottom: 20px;
 }
 
 .hero-content p{
-    font-size:24px;
-    width:650px;
-    margin-top:15px;
+    font-size: 28px;
+    width: 700px;
+    margin-bottom: 35px;
 }
 
-.destination-container{
-    display:flex;
-    align-items:center;
-    gap:20px;
-    background:white;
-    padding:20px 25px;
-    border-radius:20px;
-    margin-top:35px;
-    width:fit-content;
-}
-.destination-container-items{
-    display:flex;
-    align-items:center;
-    gap:10px;
-}
-
-.destination-input{
-    border:none;
-    outline:none;
-    padding:10px;
-}
-
-.btn-search{
-    background:#FFA02E;
-    color:white;
-    border:none;
-    padding:10px 20px;
-    border-radius:5px;
-    cursor:pointer;
-}
+/* SEARCH BOX */
 .search-box{
     display: flex;
     align-items: center;
+    gap: 20px;
+    background: white;
+    padding: 20px 25px;
+    border-radius: 20px;
+    width: fit-content;
+}
+
+.search-item{
+    display: flex;
+    align-items: center;
     gap: 10px;
 }
 
-.search-icon{
+.icon{
     width: 22px;
     height: 22px;
-    object-fit: contain;
 }
-.recommendations{
-    margin-top: 50px;
-    color: white;
-    font-size: 20px;
+
+.search-box input{
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.search-box button{
     display: flex;
-    flex-direction: row;
     align-items: center;
-    gap: 50px;
+    gap: 8px;
+    padding: 14px 22px;
+    background: #FFA02E;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
 }
-.recommendations-items{
+
+.search-icon{
+    width: 18px;
+    height: 18px;
+}
+
+/* STATS */
+.stats{
+    display: flex;
+    gap: 25px;
+    margin-top: 20px;
+    width: fit-content;
+}
+
+.stat-item{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    margin-top: 10px;
-    margin-left: 10px;
+    align-items: flex-start;
+    min-width: 120px;
 }
-.recommendations-count{
-    font-size: 30px;
-    font-weight: 700px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+
+.stat-item h2{
+    font-size: 28px;
+    color: white;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+.stat-item p{
+    font-size: 14px;
+    color: white;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    line-height: 1.2;
+}
+/* DESTINATION SECTION */
+.destination-section{
+    padding: 80px;
+    text-align: center;
+}
+
+.destination-section h1{
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.destination-section p{
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.destination-grid{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card{
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+
+.big{
+    width: 300px;
+    height: 400px;
+}
+
+.small{
+    width: 300px;
+    height: 190px;
 }
